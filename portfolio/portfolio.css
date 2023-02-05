@@ -1,0 +1,115 @@
+:root {
+  --background: rgb(43, 34, 34);
+  --text: rgb(169, 197, 199);
+}
+
+* {
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  background-color: black;
+  color: aqua;
+  position: fixed;
+  width: 100%;
+}
+
+#nav-bar {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#welcome-section {
+  width: 100%;
+}
+
+#welcome-section h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  padding-top: 10%;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+ul > li {
+  list-style-type: none;
+  display: inline;
+}
+
+#profile-pic {
+  object-fit: cover;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 10% auto 10% auto;
+}
+
+a:link {
+  color: aqua;
+  text-decoration: none;
+}
+
+#project-flexbox {
+  width: 60vw;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 500px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  position: relative;
+  left: 25%
+}
+
+.project-tile {
+  display: inline-block;
+  width: 155px;
+  height: auto;
+  object-fit: cover;
+  justify-content: center;
+  padding: 0px 12px;
+}
+
+.project-image {
+  border-radius: 9px;
+  margin-left: 12px;
+}
+
+.project-title {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+  * {
+    font-size: small;
+  }
+}

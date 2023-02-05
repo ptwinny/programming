@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 8% auto 3%;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+fieldset div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 1em;
+  border: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+#cid-header, #cid-fieldset, #update-button {
+  margin-left: 100px;
+}
+
+#exchange-div, #result-div {
+  margin-right: 100px;
+}
+
+label {
+  padding-right: 1em;
+  text-align: right;
+}
+
+input {
+  max-width: 50px;
+}
+
+#result-div {
+  margin-top: 10px;
+}

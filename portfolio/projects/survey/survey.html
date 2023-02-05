@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="survey.css">
+  <script src="survey-email-authenticator.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">The Whale Belly User Survey</h1>
+    <p id="description">
+      Thank you for helping us improve the site.
+    </p>
+  </header>
+  <div class="container">
+    <form id="survey-form" method="post" action="">
+      <fieldset class="basic-deets">
+        <h2>Name</h2>
+        <input id="name" name="name" type="text" placeholder="Leslie Smith" required>
+        <h2>Email</h2>
+        <input id="email" name="email" type="email" placeholder="lsmith@email.com" required>
+        <h2>Age (optional)</h2>
+        <input id="number" type="number" min="1" max="120">
+      </fieldset>
+
+      <h2>Which role descibes you best?</h2>
+      <fieldset>
+        <select name="role" id="dropdown" required="">
+          <option disabled="" selected="" value="">(select one)</option>
+          <option value="writer">Writer</option>
+          <option value="student">Student</option>
+          <option value="reader">Reader</option>
+          <option value="none">None of the above</option>
+          <option value="not-say">Prefer not to say</option>
+        </select>
+      </fieldset>
+
+      <h2>What do you like best about the site?</h2>
+      <fieldset>
+        <select name="best" id="dropdown" required="">
+          <option disabled="" selected="" value="">(select one)</option>
+          <option value="fiction">Fiction</option>
+          <option value="essays">Essays</option>
+          <option value="poetry">Poetry</option>
+          <option value="none">None</option>
+        </select>
+      </fieldset>
+      
+      <h2>What do you like least on the site?</h2>
+      <fieldset>
+        <select name="worst" id="dropdown" required="">
+          <option disabled="" selected="" value="">(select one)</option>
+          <option value="fiction">Fiction</option>
+          <option value="essays">Essays</option>
+          <option value="poetry">Poetry</option>
+          <option value="none">None</option>
+        </select>
+      </fieldset>
+
+      <h2>What would you like to see improved?</h2><h3>(Check all that apply)</h3>
+      <fieldset>
+        <label><input class="inline" type="checkbox" name="" value="1">Quality of writing</label>
+        <label><input class="inline" type="checkbox" name="" value="2">More essays</label>
+        <label><input class="inline" type="checkbox" name="" value="3">More fiction</label>
+        <label><input class="inline" type="checkbox" name="" value="4">More poetry</label>
+        <label><input class="inline" type="checkbox" name="" value="5">Longer works</label>
+        <label><input class="inline" type="checkbox" name="" value="5">Shorter works</label>
+      </fieldset>
+
+      <h2>Would you recommend thewhalebelly.com to a friend?</h2>
+      <fieldset>
+        <label><input class="inline" name="user-recommend" value="yes" type="radio" checked="">Yes</label>
+        <label><input class="inline" name="user-recommend" value="no" type="radio">No</label>
+        <label><input class="inline" name="user-recommend" value="maybe" type="radio">Maybe</label>
+      </fieldset>
+      
+      <h2>Additional Comments</h2>
+      <fieldset>
+        <label id="comment-box" for="comment-box"><textarea id="comment-box" name="comment-box" placeholder="Write comments here."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

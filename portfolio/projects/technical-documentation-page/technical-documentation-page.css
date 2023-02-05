@@ -1,0 +1,9 @@
+#navbar {
+  text-align: left;
+}
+
+@media (max-width: 750px;) {
+  header {
+    width: 250px;
+  }
+}

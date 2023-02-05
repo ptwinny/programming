@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+  <title>Portfolio of Phillip Twining</title>
+</head>
+<body>
+  <!-- nav bar  -->
+  <nav id="nav-bar">
+    <a href="#hero-image">WELCOME</a></li>
+    <a href="#about-me">ABOUT ME</a></li>
+    <a href="#projects-grid">EXPERIENCE</a></li>
+    <a href="#contact">CONTACT</a></li>
+  </nav>
+
+  <!-- hero section -->
+  <div id="hero-image">
+    <div id="hero-text">
+      <h1>Phillip Twining</h1>
+      <p>writer, front-end developer, and website designer</p>
+      <button>Hire Me</button>
+    </div>
+  </div>
+
+  <!-- about me section -->
+  <div id="about-me">
+    <h2 class="section-header" id="about-me-header">About Me</h2>
+    <p>
+      I studied literature and creative writing at the University of Texas at Austin. Later I studied education and learned to conduct 
+      research at the Univeristy of Texas at San Antonio and Teachers College, Columbia Univeristy. I learned HTML, CSS, and JavaScript 
+      using Harvard's CS50 online course and earned certifications in each language through freecodecamp.org.
+    </p>
+    <p>
+      For years I taught English at the high school level and the teaching of English at the graduate level. But I'm now transitioning 
+      into working in tech and writing both fiction and non-fiction. I'm knowledgeable in literature, tech, fitness, cooking, and 
+      education.
+    </p>
+    <p>
+      My writing can be found at thewhalebelly.com.
+    </p>
+    <h3>Skills</h3>
+    <h4>HTML</h4>
+    <div class="empty-bar"></div>
+    <h4>CSS</h4>
+    <div class="empty-bar"></div>
+    <h4>JavaScript</h4>
+    <div class="empty-bar"></div>
+    <h4>Other Skills in Development</h4>
+    <p>Bootstrap, jQuery, SASS, React, Redux</p>
+    <button>Download Resume</button>
+  </div>
+
+  <!-- experience section -->
+  <section id="project-section">
+    <h2>Web Development Projects</h2>
+    <div id="projects-grid">
+      </a>
+      <a class="projects-tile" href="">
+        <img class="projects-image" src="images/whale-logo.png" alt="">
+        <p class="projects-title"><span>Amaretti Coffee Website</span></p>
+        <p class="projects-description">
+          This is a website I made for a local coffee shop in San Antonio, TX. It includes...
+        </p>
+      </a>
+      <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
+        <img class="projects-image" src="../portfolio/projects/project-images/survey.PNG" alt="">
+        <p class="projects-title"><span>Survey Form</span></p>
+        <p class="projects-description">
+          This is a sample survey form. It showcases how I use HTML and CSS to create a
+          simple form common on many websites. Also includes JavaScript program to check
+          for valid email address input.
+        </p>
+
+      <a class="projects-tile" href="">
+        <img class="projects-image" src="../portfolio/projects/project-images/palindrome-checker.png" alt="image of palindrome checker app">
+        <p class="projects-title"><span>Palindrome Checker</span></p>
+        <p class="projects-description">
+          This is a JavaScript program that allows the user to enter in a phrase and it determines whether or not it's a palindrome.
+          Maybe not super useful, but it does showcase my ability to create a program that parses strings and checks if they meet
+          certain requirements, which is useful for things like passwords and collecting user input.
+        </p>
+      </a>
+      <a class="projects-tile" href="">
+        <img class="projects-image" src="../portfolio/projects/project-images/roman-numeral-converter.png" alt="image of roman numeral converter app">
+        <p class="projects-title"><span>Roman Numeral Converter</span></p>
+        <p class="projects-description">
+          This is a JavaScript program that takes a positive integer and converts it to a Roman numeral.
+        </p>
+      </a>
+      <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
+        <img class="projects-image" src="../portfolio/projects/project-images/caesar-cipher.png" alt="image of caesar cipher app">
+        <p class="projects-title"><span>Caesar Cipher</span></p>
+        <p class="projects-description">
+          This is a JavaScript program that takes a phrase and shifts the letters by a certain number. It's a simple kind of encryption.
+        </p>
+      </a>
+      <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
+        <img class="projects-image" src="../portfolio/projects/project-images/telephone-number-validator.png" alt="image of telephone number validator">
+        <p class="projects-title"><span>Telephone Number Validator</span></p>
+        <p class="projects-description">
+          This is a JavaScript program that checks if a user entered a valid phone number, say on a form.
+        </p>
+      </a>
+      <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
+        <img class="projects-image" src="../portfolio/projects/project-images/cash-register.png" alt="image of cash register app">
+        <p class="projects-title"><span>Cash Register</span></p>
+        <p class="projects-description">
+          This is a JavaScript program that determines correct change, with the correct denominations, of a sale. It also holds and
+          updates a cash-in-drawer count.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <div id="contact">
+    <div style="text-align:center">
+      <h2>Contact Me</h2>
+      <p>Leave me a message:</p>
+    </div>
+    <div class="contact-links">
+      <div id="contact-link-email">
+        <a class="btn contact-details" href="mailto:phillip.twining@gmail.com"><i class="fas fa-at"></i> Send an email</a>
+      </div>
+      <div id="contact-link-github">
+        <a class="btn contact-details" target="_blank" href="https://github.com/ptwinny"><i class="fab fa-github"></i> Collaborate on Github</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  background-color: blueviolet;
+  color:palevioletred
+}
+
+form {
+  width: 15vw;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.inline {
+  vertical-align: center;
+}

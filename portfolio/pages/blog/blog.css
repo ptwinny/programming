@@ -1,0 +1,93 @@
+:root {
+  --main-black: #0c0402;
+  --main-orange: #e8995e;
+  --main-blue: #9ed9df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px;
+  background-color: var(--main-black);
+}
+
+p {
+  text-indent: 2em;
+  color: var(--main-blue);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--main-orange);
+}
+
+/* blog title */
+.blog-title {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background-color: var(--main-black);
+  border: 1px solid var(--main-blue);
+}
+
+/* two unequal colums that float next to each other */
+/* left column */
+.left-column {
+  float: left;
+  width: 75%;
+}
+
+/* right column */
+.right-column {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* post banner image */
+.post-banner-img {
+  background-color: var(--main-blue);
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* card effect for articles */
+.card {
+  background-color: var(--main-black);
+  border: 1px solid var(--main-blue);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* clear float after columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-me-image {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--main-black);
+  margin-top: 20px;
+  border: 1px solid var(--main-blue);
+}
+
+/* responsive layout */
+@media screen and (max-width: 800px) {
+  .left-column, .right-column {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,613 @@
+:root {
+  --main-lightblue: #00bfff;
+  --main-blue: #002aff;
+  --main-red: #ff0000;
+  --main-darkred: #8c0101;
+  --main-orange: #fd9c00;
+  --main-red-orange: #ff5e00;
+  --main-dark-orange: #c73e04;
+  --main-lightorange: #ffc400;
+  --main-darkgreen: #318c11;
+  --main-lightgreen: #8cff00;
+  --main-yellow: #fff200;
+  --main-purple: #6F0B8D;
+  --main-pink: #ff00c8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-darkgreen);
+  font-size: 1.8rem;
+}
+/* start general */
+h1 {
+  color: var(--main-lightgreen);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  color: var(--main-black);
+  margin: 2%;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* end general */
+
+/* start navigation styles */
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-orange);
+  z-index: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+#about-link {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+#work-link {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+#contact-link {
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+#github-link {
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+#blog-link {
+  animation: 6s fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  
+  50% {
+    opacity: 10%;
+  }
+  
+  100% {
+    opacity: 100%;
+  }
+}
+
+.nav-link {
+  color: var(--main-red);
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px var(--main-darkred);
+}
+/* end navigation style */
+
+/* start welcome section style */
+/* start stars subsection */
+.stars, .small-stars {
+  position: absolute;
+  animation: 1s linear infinite bounce;
+}
+
+#star1, #small-star2, #star3, #small-star4, #star5, #small-star6 {
+  animation-duration: 1.3s;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {transform: translateY(0);} 
+  25% {transform: translateY(-15px);} 
+  75% {transform: translateY(15px);} 
+} 
+
+#star1 {
+  left: 10%;
+  top: 66%;
+}
+
+#star2 {
+  top: 10%;
+  left: 12%;
+}
+
+#star3 {
+  top: 70%;
+  left: 33%;
+}
+
+#star4 {
+  top: 15%;
+  left: 52%;
+}
+
+#star5 {
+  top: 80%;
+  left: 75%
+}
+
+#star6 {
+  top: 33%;
+  left: 85%;
+}
+
+#small-star1 {
+  top: 55%;
+  left: 6%;
+}
+
+#small-star2 {
+  top: 25%;
+  left: 26%;
+}
+
+#small-star3 {
+  top: 82%;
+  left: 46%;
+}
+
+#small-star4 {
+  top: 92%;
+  left: 56%;
+}
+
+#small-star5 {
+  top: 75%;
+  left: 67%;
+}
+
+#small-star6 {
+  top: 25%;
+  left: 76%;
+}
+
+#small-star7 {
+  top: 65%;
+  left: 89%;
+}
+
+/* end stars subsection */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-yellow);
+}
+
+svg {
+  font-family: 'DM Serif Display', serif;
+  font-size: 450%;
+  font-weight: bold;
+  width: 450px;
+  height: 270px;
+  transform: rotate(-15deg);
+  margin: 70px 100px -75px -25px;
+  overflow: visible;
+  word-spacing: -15px;
+}
+
+#title, #subtitle, .section-header {
+  fill: white;
+  stroke: black;
+  stroke-width: 10px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#welcome-subtitle {
+  margin-left: 125px;
+  margin-top: -10px;
+  margin-left: 110px;
+}
+
+#title-orange-outline {
+  fill: white;
+  stroke: var(--main-lightorange);
+  stroke-width: 30px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-black-outline {
+  fill: white;
+  stroke: black;
+  stroke-width: 36px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-six {
+  fill: none;
+  stroke: var(--main-red-orange);
+  stroke-width: 40px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: .5s;
+}
+
+#title-change-color-five {
+  fill: none;
+  stroke: var(--main-darkgreen);
+  stroke-width: 44px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: .4s;
+}
+
+#title-change-color-four {
+  fill: none;
+  stroke: var(--main-red);
+  stroke-width: 48px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: .3s;
+}
+
+#title-change-color-three {
+  fill: none;
+  stroke: var(--main-purple);
+  stroke-width: 52px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: .2s;
+}
+
+#title-change-color-two {
+  fill: none;
+  stroke: var(--main-pink);
+  stroke-width: 56px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: .1s;
+}
+
+#title-change-color-one {
+  fill: none;
+  stroke: var(--main-blue);
+  stroke-width: 60px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-blank {
+  fill: var(--main-yellow);
+  stroke: var(--main-yellow);
+  stroke-width: 36px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#subtitle-blank {
+  fill: var(--main-yellow);
+  stroke: var(--main-yellow);
+  stroke-width: 15px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#welcome-subtitle {
+  padding-top: 2%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 225%;
+}
+
+#subtitle {
+  font-weight: lighter;
+  stroke-width: 5px;
+}
+
+#subtitle-orange-outline {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-lightorange);
+  stroke-width: 15px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#subtitle-black-outline {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: black;
+  stroke-width: 20px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.subtitle-change-color {
+  animation-name: spin, opacity;
+  animation-delay: 0.5s, 0s;
+  animation-duration: 2.5s, 0.5s;
+  transform-origin: 80% 80%;
+  animation-direction: reverse, normal;
+}
+
+#subtitle-change-color-six {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-red-orange);
+  stroke-width: 24px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: 0.5s;
+}
+
+#subtitle-change-color-five {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-darkgreen);
+  stroke-width: 28px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: 0.4s;
+}
+
+#subtitle-change-color-four {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-red);
+  stroke-width: 32px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: 0.3s;
+}
+
+#subtitle-change-color-three {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-purple);
+  stroke-width: 36px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: 0.2s;
+}
+
+#subtitle-change-color-two {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-pink);
+  stroke-width: 40px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  animation-delay: 0.1s;
+}
+
+#subtitle-change-color-one {
+  font-family: 'Courier New', Courier, monospace;
+  fill: none;
+  stroke: var(--main-blue);
+  stroke-width: 44px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.title-main {
+  animation-name: opacity, scale;
+  animation-duration: 3.1s, .5s;
+  animation-delay: 0s, 3s;
+}
+
+.subtitle-main {
+  animation-name: opacity, scale;
+  animation-duration: 3.6s, .5s;
+  animation-delay: 0s, 3.5s;
+}
+
+@keyframes scale {
+  from {
+    scale: 1000%;
+  }
+
+  to {
+    scale: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform-origin: 85% 10%;
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title-change-color {
+  animation-name: spin;
+  animation-duration: 3s;
+}
+
+/* end welcome section style */
+
+/* start projects section */
+#projects {
+  background-color: var(--main-red-orange);
+}
+
+.projects-section {
+  position: relative;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.section-header {
+  transform: rotate(15deg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  letter-spacing: 4px;
+}
+
+#projects-header {
+  fill: var(--main-red-orange);
+  stroke: white;
+  stroke-width: 4px;
+}
+
+#projects-header-white-outline {
+  fill: white;
+  stroke: black;
+  stroke-width: 18px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.projects-tile {
+  border-radius: 6px;
+  background-color: var(--main-lightblue);
+  box-shadow: 10px 10px var(--main-dark-orange);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.projects-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+/* end projects section */
+
+/* start contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-lightgreen);
+}
+
+.contact-section-header .section-header {
+  color: var(--main-darkgreen);
+  transform: none;
+  font-size: 6rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-links a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-yellow);
+}
+/* end contact section */
+
+/* start footer section */
+footer {
+  background-color: var(--main-red);
+}
+
+
+/* end footer section */

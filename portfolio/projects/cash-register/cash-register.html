@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="cash-register.js"></script>
+  <link rel="stylesheet" href="cash-register.css">
+  <title>Cash Register</title>
+</head>
+<body>
+  <header>
+    <h1>Cash Register</h1>
+  </header>
+  <div class="row">
+    <div class="column" id="left-column">
+      <h2 id="cid-header">Enter starting cash-in-drawer (total dollar amounts)</h2>
+      <fieldset id="cid-fieldset">
+        <div>
+          <label class="input-labels" id="hundres-input-label" for="hundreds-cid-input">Hundred</label>
+          <input type="number" step=".01" name="hundreds-cid-input" class="cid-input" id="hundreds-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="twenties-input-label" for="twenties-cid-input">Twenty</label>
+          <input type="number" step=".01" name="twenties-cid-input" class="cid-input" id="twenties-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="tens-input-label" for="tens-cid-input">Ten</label>
+          <input type="number" step=".01" name="tens-cid-input" class="cid-input" id="tens-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="fives-input-label" for="fives-cid-input">Five</label>
+          <input type="number" step=".01" name="fives-cid-input" class="cid-input" id="fives-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="ones-input-label" for="ones-cid-input">One</label>
+          <input type="number" step=".01" name="ones-cid-input" class="cid-input" id="ones-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="quarters-input-label" for="quarters-cid-input">Quarter</label>
+          <input type="number" step=".01" name="quarters-cid-input" class="cid-input" id="quarters-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="dimes-input-label" for="dimes-cid-input">Dime</label>
+          <input type="number" step=".01" name="dimes-cid-input" class="cid-input" id="dimes-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="nickles-input-label" for="nickles-cid-input">Nickle</label>
+          <input type="number" step=".01" name="nickles-cid-input" class="cid-input" id="nickles-cid-input">
+        </div>
+        <div>
+          <label class="input-labels" id="pennies-input-label" for="pennies-cid-input">Penny</label>
+          <input type="number" step=".01" name="pennies-cid-input" class="cid-input" id="pennies-cid-input">
+        </div>
+        <input type="submit" id="update-button" value="Update">
+      </fieldset>
+    </div>
+
+    <div class="column" id="right-column">
+      <div id="exchange-div">
+        <header>
+          <h2>Enter price and cash exchange</h2>
+        </header>
+        <fieldset id="exchange-fieldset">
+          <div>
+            <label class="input-labels" id="price-input-label" for="price-input">Price: </label>
+            <input id="price-input" name="price-input" type="number" step=".01" required>
+          </div>
+          <div>
+            <label class="input-labels" id="payment-input-label" for="payment-input">Cash given: </label>
+            <input id="payment-input" name="payment-input" type="number" step=".01" required>
+          </div>
+            <input id="submit-button" type="submit" value="Submit">
+        </fieldset>
+      </div>
+      <div id="result-div">
+        <header>
+          <h2>Result</h2>
+        </header>
+        <fieldset>
+          <p class="till">
+            Register Status: <span id="status-span"></span>
+          </p>
+          <p class="till" id="change-due-p">
+            Change due: <span id="change-due-span"></span>
+          </p>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

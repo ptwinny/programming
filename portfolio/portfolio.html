@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twining Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  
+  <header id="header">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">Welcome</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a id="github-link" href="ptwinny/ptwinny.github.io " target="_blank">GitHub</a></li>
+        <li><a href="#contact-me">ContactMe</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <section id="welcome-section">
+    <h1>Front-End Developer</h1>
+    <h2>Love of learning...</h2>
+    <img id="profile-pic" src="images/profile-pic.png" alt="photo of Phillip Twining">
+  </section>
+ 
+  <section id="about-me-section">
+    <h1 id="hello-world">Hello World!</h1>
+    <p>I'm a front-end developer just starting out in my career.
+      before getting into programming I taught high school English
+      and studied education in graduate and doctoral studies. <br>
+      I'm a reader of literature, philosophy, and history. <br>
+      My background in the humanities makes me a great coder because... <br>
+      So far my most skilled languages are HTML, CSS, and JavaScript, though
+      I hope to both expand and deepen my knowledge of programming languages...
+    </p>
+    <h3>Languages</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <h3>Dev Libraries</h3>
+    <ul>
+      <li>Bootstrap</li>
+      <li>JQuery</li>
+      <li>SASS</li>
+      <li>React</li>
+      <li>Redux</li>
+    </ul>
+  </section>
+
+  <section id="projects-section">
+    <h2>HTML, CSS, and JavaScript Projects</h2>
+    <div id="project-flexbox">
+      <div class="project-tile">
+        <a class="project-link" href="https://www.thewhalebelly.com">
+          <img class="project-image" src="images/whale-logo.png" alt="logo for thewhalebelly.com">
+          <p class="project-title">Personal Blog</p>
+        </a>
+      </div>
+    
+      <div class="project-tile">
+        <a class="project-link" href="">
+          <img class="project-image" src="images/whale-logo.png" alt="">
+          <p class="project-title">Survey Form</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="project-link" href="">
+          <img class="project-image" src="images/whale-logo.png" alt="">
+          <p class="project-title">Tribute Page</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="project-link" href="">
+          <img class="project-image" src="images/whale-logo.png" alt="">
+          <p class="project-title">Technical Documentation Page</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="project-link" href="">
+          <img class="project-image" src="images/whale-logo.png" alt="">
+          <p class="project-title">Product Landing Page</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-me-section">
+    <h1>Contact Me</h1>
+    <form action="submit">
+      <textarea name="message-area" id="message-area" cols="30" rows="10"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>

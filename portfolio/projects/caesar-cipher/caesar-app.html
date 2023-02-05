@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher App</title>
+  <script src="caesar-app.js"></script>
+  <link rel="stylesheet" href="caesar-app.css">
+</head>
+<body>
+  <h1>Caesar Cipher App</h1>
+  <form id="cipher-form">
+    <fieldset>
+      <label id="code-label" for="code">Enter a word or phrase: <input id="code" name="code" type="text" placeholder="oPen SesaMe" required></label>
+      <label id="rotate-number-label" for="rotate-number">Enter a number to shift characters: <input id="rotate-number" name="rotate-number" type="number" placeholder="13" required></label>
+    </fieldset>
+    <p id="answer"></p>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>

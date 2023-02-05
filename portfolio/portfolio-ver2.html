@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twining Portfolio</title>
+    <link rel="stylesheet" href="portfolio-ver2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style> @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); </style>
+    <script src="portfolio.js"></script>
+</head>
+<body>
+
+  <!-- start nav-bar -->
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li class="nav-item" id="about-li">
+        <a href="#welcome-section" class="nav-link" id="about-link">ABOUT</a>
+      </li>
+      <li class="nav-item" id="work-li">
+        <a href="#projects" class="nav-link" id="work-link">PROJECTS</a>
+      </li>
+      <li class="nav-item" id="contact-li">
+        <a href="#contact" class="nav-link" id="contact-link">CONTACT</a>  
+      </li>
+      <li class="nav-item" id="github-li">
+        <a id="github-link" class="nav-link" href="https://github.com/ptwinny/programming-projects" target="_blank">
+          GITHUB
+        </a>
+      </li>
+      <li class="nav-item" id="blog-li">
+        <a id="blog-link" class="nav-link" href="" target="_blank">
+          DEV BLOG
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- end nav-bar -->
+
+  <main>
+    <!-- start #welcome-section -->
+
+      <!-- TODO: add some diagonal line animations, with moving gradient -->
+    <section id="welcome-section" class="welcome-section">
+      <img class="small-stars" id="small-star1" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star2" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star3" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star4" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star5" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star6" src="images/icons8-starburst-shape-50.png">
+      <img class="small-stars" id="small-star7" src="images/icons8-starburst-shape-50.png">
+      <img class="stars" id="star1" src="images/icons8-starburst-shape-100.png">
+      <img class="stars" id="star2" src="images/icons8-starburst-shape-100.png">
+      <img class="stars" id="star3" src="images/icons8-starburst-shape-100.png">
+      <img class="stars" id="star4" src="images/icons8-starburst-shape-100.png">
+      <img class="stars" id="star5" src="images/icons8-starburst-shape-100.png">
+      <img class="stars" id="star6" src="images/icons8-starburst-shape-100.png">
+      <svg class="welcome-text" id="welcome-title" viewBox="-10 0 450 50">
+        <text class="title-change-color" id="title-change-color-one" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-two" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-three" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-four" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-five" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-six" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-blank" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title-black-outline" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title-orange-outline" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title" x="10" y="40">Phillip Twining</text>
+      </svg>
+      <svg class="welcome-text" id="welcome-subtitle">
+        <text class="subtitle-change-color" id="subtitle-change-color-one" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-change-color-two" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-change-color-three" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-change-color-four" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-change-color-five" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-change-color-six" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-change-color" id="subtitle-blank" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle-black-outline" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle-orange-outline" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle" x="10" y="40">front-end web developer</text>
+      </svg>
+    </section> 
+    <!-- end #welcome-section -->
+    
+    <!-- start #projects-section -->
+    <section id="projects" class="projects-section">
+      <svg class="section-header-svg" id="projects-header-svg" viewBox="-40 90 450 50">
+        <text class="section-header" id="projects-header-white-outline">PROJECTS</text>
+        <text class="section-header" id="projects-header">PROJECTS</text>
+      </svg>
+      <div class="projects-grid">
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Survey Form</span></p>
+        </a>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/tribute-page-kathy-h.html">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Tribute Page</span></p>
+        </a>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Technical Documentation Page</span></p>
+        </a>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Product Landing Page</span></p>
+        </a>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Palindrome Checker</span></p>
+        </a>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Roman Numeral Converter</span></p>
+        </a>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Caesar Cipher</span></p>
+        </a>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Telephone Number Validator</span></p>
+        </a>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Cash Register</span></p>
+        </a>
+      </div>
+    </section>
+    <!-- end #projects-section -->
+
+    <!-- start contact-section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h1 class="section-header">Let's collaborate</h1>
+      </div>
+      <div class="contact-links">
+        <div id="contact-link-email">
+          <a class="btn contact-details" href="mailto:phillip.twining@gmail.com"><i class="fas fa-at"></i> Send an email</a>
+        </div>
+        <div id="contact-link-github">
+          <a class="btn contact-details" target="_blank" href="https://github.com/ptwinny"><i class="fab fa-github"></i> Collaborate on Github</a>
+        </div>
+      </div>
+    </section>
+    <!-- end contact-section -->
+
+  </main>
+  
+
+
+  <footer>
+    <p>footer stuff</p>
+  </footer>
+</body>
+</html>

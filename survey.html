@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey</h1>
+  <p id="description">
+    Please fill out this survey
+    or else someone may get hurt.
+  </p>
+  <form id="survey-form" method="post" action="">
+    <h2>Basic Deets</h2>
+    <fieldset class="basic-deets">
+      <label id="name-label" for="name">Enter your name: <input id="name" name="name" type="text" placeholder="Leslie Smith" required></label>
+      <label id="email-label" for="email">Enter your email: <input id="email" name="email" type="email" placeholder="lsmith@email.com" required></label>
+      <label id="number-label" for="number">Enter a number: <input id="number" type="number" min="1" max="10" placeholder="5"></label>
+    </fieldset>
+      <h2>Which Sandwich?</h2>
+    <fieldset>
+      <label id="sandwich-choice-label" for="sandwich-choice">Choose a sandwich:
+        <select name="sandwich-choice" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Roast Beef</option>
+          <option value="2">Dirt</option>
+        </select>
+      </label>
+    </fieldset>
+    <h2>Goofy or Not Goofy?</h2>
+    <fieldset>
+      <label class="inline" id="goofy" for="goof-type"><input id="goofy" type="radio" name="goof-type" value="goofy">Goofy</label>
+      <label class="inline" id="not-goofy" for="goof-type"><input id="not-goofy" type="radio" name="goof-type" value="not-goofy">Not Goofy</label>
+    </fieldset>
+    <h2>Ideal Mate Characteristics</h2>
+    <fieldset>
+      <label class="inline" id="ideal-mate" for="mate-char"><input id="strength" type="checkbox" name="mate-char" value="1">Strength</label>
+      <label class="inline" id="ideal-mate" for="mate-char"><input id="intelligence" type="checkbox" name="mate-char" value="2">Intelligence</label>
+      <label class="inline" id="ideal-mate" for="mate-char"><input id="charisma" type="checkbox" name="mate-char" value="3">Charisma</label>
+      <label class="inline" id="ideal-mate" for="mate-char"><input id="stealth" type="checkbox" name="mate-char" value="4">Stealth</label>
+      <label class="inline" id="ideal-mate" for="mate-char"><input id="agility" type="checkbox" name="mate-char" value="5">Agility</label>
+    </fieldset>
+      <h2>Additional Comments</h2>
+    <fieldset>
+      <label id="comment-box" for="comment-box"><textarea id="comment-box" name="comment-box" placeholder="Is it good that I...?"></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
